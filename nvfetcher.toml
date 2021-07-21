@@ -6,6 +6,10 @@ src.git = "https://github.com/dylmeadows/EonTimer"
 src.branch = "master"
 fetch.github = "dylmeadows/EonTimer"
 
+[eontimer-qtsass]
+src.pypi = "qtsass"
+fetch.pypi = "qtsass"
+
 [gcs]
 src.github = "richardwilkes/gcs"
 fetch.github = "richardwilkes/gcs"
@@ -17,8 +21,3 @@ src.git = "https://github.com/Admiral-Fish/PokeFinder"
 src.branch = "master"
 fetch.github = "Admiral-Fish/PokeFinder"
 git.fetchSubmodules = true
-
-[qtsass]
-# Build dependency of eontimer
-src.pypi = "qtsass"
-fetch.pypi = "qtsass"

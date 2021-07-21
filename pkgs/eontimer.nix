@@ -2,10 +2,10 @@
 
 let
   inherit (libsForQt5) qtbase qtsvg qttools wrapQtAppsHook;
-  inherit (sources) eontimer qtsass;
+  inherit (sources) eontimer eontimer-qtsass;
   inherit (python3Packages) buildPythonPackage libsass pyqt5;
   qtsass-pkg = buildPythonPackage {
-    inherit (qtsass) pname version src;
+    inherit (eontimer-qtsass) pname version src;
     propagatedBuildInputs = [ libsass pyqt5 ];
   };
 
