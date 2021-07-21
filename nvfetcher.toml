@@ -1,0 +1,24 @@
+[eontimer]
+src.git = "https://github.com/dylmeadows/EonTimer"
+# For some reason the latest release is a java-based reimplementation,
+# but a newer version exists that hasn't been published as a real
+# release on github
+src.branch = "master"
+fetch.github = "dylmeadows/EonTimer"
+
+[gcs]
+src.github = "richardwilkes/gcs"
+fetch.github = "richardwilkes/gcs"
+
+[pokefinder]
+src.git = "https://github.com/Admiral-Fish/PokeFinder"
+# The released version currently fails to build because a submodule
+# repo has stopped existing
+src.branch = "master"
+fetch.github = "Admiral-Fish/PokeFinder"
+git.fetchSubmodules = true
+
+[qtsass]
+# Build dependency of eontimer
+src.pypi = "qtsass"
+fetch.pypi = "qtsass"
