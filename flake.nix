@@ -2,7 +2,6 @@
   description = "A collection of somewhat specialized nix packages";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-21.05";
     flake-utils.url = "github:numtide/flake-utils";
     nvfetcher = {
       url =
