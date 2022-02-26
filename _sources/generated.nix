@@ -23,26 +23,26 @@
   };
   gcs = {
     pname = "gcs";
-    version = "v4.32.1";
+    version = "v4.37.1";
     src = fetchgit {
       url = "https://github.com/richardwilkes/gcs";
-      rev = "v4.32.1";
+      rev = "v4.37.1";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "0cqkc1q4apirnbs1wi1rmc26il48vnajdpm0gwdkrvxykgi9fwrd";
+      sha256 = "0mxl7mcgq74q5m6b95lq7jdwlpcr3wvpjf516cpj1lr92ns7cwyf";
     };
   };
   pokefinder = {
     pname = "pokefinder";
-    version = "32319fc33d0cb62220e3286f71d3fc6395a21e87";
+    version = "ca9644d4ac0ba687c21c1344ab3be0dc31157c3b";
     src = fetchgit {
       url = "https://github.com/Admiral-Fish/PokeFinder";
-      rev = "32319fc33d0cb62220e3286f71d3fc6395a21e87";
+      rev = "ca9644d4ac0ba687c21c1344ab3be0dc31157c3b";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "0438pqxv69waz6igfsm4zb51kh9x422szgvw6nrg04acapl13pxv";
+      sha256 = "0x5hqmmq2c6fyv8hs537f0ljppb27cf626a0hvk0j67py49x7y3i";
     };
   };
 }
