@@ -1,3 +1,15 @@
+[edopro]
+# EDOPro obviously has a GitHub repo, but it's not really possible to
+# build the artifacts downstream. They instead publish full
+# applications as tarballs on a separate "assets" repo.
+#
+# Unfortunately, not all versions are built for all platforms, so we
+# need to scrape the website to figure out what the latest Linux
+# version is.
+src.webpage = "https://projectignis.github.io/download.html"
+src.regex = 'https://github\.com/ProjectIgnis/edopro-assets/releases/download/(?P<version>\d+\.\d+\.\d+)/ProjectIgnis-EDOPro-\1-linux\.tar\.gz'
+fetch.url = "https://github.com/ProjectIgnis/edopro-assets/releases/download/$ver/ProjectIgnis-EDOPro-$ver-linux.tar.gz"
+
 [eontimer]
 src.git = "https://github.com/dylmeadows/EonTimer"
 # For some reason the latest release is a java-based reimplementation,

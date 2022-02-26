@@ -24,6 +24,11 @@
             type = "app";
             program = "${packages.gcs}/bin/gcs";
           };
+
+          "EDOPro" = {
+            type = "app";
+            program = "${packages.edopro}/bin/edopro";
+          };
         };
 
         devShell = pkgs.mkShell { buildInputs = with pkgs; [ nvfetcher ]; };
