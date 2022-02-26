@@ -4,8 +4,7 @@
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
     nvfetcher = {
-      url =
-        "github:berberman/nvfetcher?rev=ba3366421ff66a06f4176780dff5e8373512bfba";
+      url = "github:berberman/nvfetcher";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
