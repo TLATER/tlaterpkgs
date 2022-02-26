@@ -1,16 +1,9 @@
 {
   description = "A collection of somewhat specialized nix packages";
 
-  inputs = {
-    flake-utils.url = "github:numtide/flake-utils";
-    nvfetcher = {
-      url = "github:berberman/nvfetcher";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
-  };
+  inputs.flake-utils.url = "github:numtide/flake-utils";
 
-  outputs = { self, nixpkgs, flake-utils, nvfetcher }:
+  outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem (system:
       let pkgs = import nixpkgs { inherit system; };
       in {
@@ -32,5 +25,7 @@
             program = "${packages.gcs}/bin/gcs";
           };
         };
+
+        devShell = pkgs.mkShell { buildInputs = with pkgs; [ nvfetcher ]; };
       });
 }
