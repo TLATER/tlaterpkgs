@@ -1,0 +1,87 @@
+{
+    "edopro": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "edopro",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-c7E7k6mKfXltiknR1JAsC78/q4+ypjJ19B2PBJX2nE4=",
+            "type": "url",
+            "url": "https://github.com/ProjectIgnis/edopro-assets/releases/download/39.3.1/ProjectIgnis-EDOPro-39.3.1-linux.tar.gz"
+        },
+        "version": "39.3.1"
+    },
+    "eontimer": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "eontimer",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "dylmeadows",
+            "repo": "EonTimer",
+            "rev": "d53e42a508de4003b719791ce36e37a8f49dbfc9",
+            "sha256": "sha256-jelFKEaifMOtKWJIkJvDMoP+dsQOfNPkx9YjyK4HVj4=",
+            "type": "github"
+        },
+        "version": "d53e42a508de4003b719791ce36e37a8f49dbfc9"
+    },
+    "eontimer-qtsass": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "eontimer-qtsass",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-J8SfY86p4joLlhj3H0pOmSgzzRz9947YMsac7qHeH+c=",
+            "type": "url",
+            "url": "https://pypi.io/packages/source/q/qtsass/qtsass-0.3.0.tar.gz"
+        },
+        "version": "0.3.0"
+    },
+    "gcs": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "gcs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "richardwilkes",
+            "repo": "gcs",
+            "rev": "v4.37.1",
+            "sha256": "sha256-znN2tBUp0yAvM6E4eTcfmV3KmzyYlrRMLZgc/Fg9tFc=",
+            "type": "github"
+        },
+        "version": "v4.37.1"
+    },
+    "pokefinder": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "pokefinder",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "Admiral-Fish",
+            "repo": "PokeFinder",
+            "rev": "8cc4f370621e18499e958b3dba1a4aa2a3ab80ec",
+            "sha256": "sha256-XojkmEnHeilhRZ6OQ46Qd0yJLHnAAQyvdS4zAlZ2xTw=",
+            "type": "github"
+        },
+        "version": "8cc4f370621e18499e958b3dba1a4aa2a3ab80ec"
+    }
+}
