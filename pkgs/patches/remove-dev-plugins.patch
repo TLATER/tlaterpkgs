@@ -1,0 +1,72 @@
+diff --git a/build.gradle b/build.gradle
+index e6fe0dc..94653a9 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -1,12 +1,7 @@
+-// Access Git info from build script
+-plugins {
+-    id "org.ajoberstar.grgit" version "4.1.0"
+-    id "com.diffplug.spotless" version "5.0.0"
+-}
+ 
+ 
+ apply plugin: 'java-library'
++apply plugin: 'maven-publish'
+-apply plugin: 'com.diffplug.spotless'
+ 
+ 
+ 
+@@ -31,49 +25,16 @@ dependencies {
+ 
+ // Custom properties
+ ext {
+-    // Get tag and commit info from Git to use for version numbering
+-    def repo = grgit.open(currentDir: file('.'))
+-    def head = repo.head()
+-    def tags = repo.tag.list().find {
+-        it.commit == head
+-    }
++    tagVersion = "@version@"
++    project.version = tagVersion
+ 
+-    if (tags) {
+-        tagVersion = tags.getName()
+-        project.version = tagVersion
+-    }
+-
+-    revision = head.abbreviatedId
+-    revisionFull = head.id
++    revision = "@revision@"
++    revisionFull = "@revisionFull@"
+ 
+ //    println 'Configuring for ' + project.name + " " + tagVersion + " by " + vendor
+ }
+ group = "net.rptools.dicelib"
+ 
+-spotless {
+-    java {
+-        licenseHeaderFile 'spotless.license.java'
+-        // Now using the Google Java style guide
+-        //eclipse().configFile('build-resources/eclipse.prefs.formatter.xml')
+-        googleJavaFormat()
+-        // If you get exceptions thrown by spotlessApply, this might
+-        // help.  Enable it here if the problem is with a Java file, and
+-        // below if it is not.  Don't leave it enabled, as nothing will
+-        // actually be updated if you do.
+-        // https://github.com/diffplug/spotless/blob/master/PADDEDCELL.md
+-        //paddedCell()
+-    }
+-
+-    format 'misc', {
+-        target '**/*.gradle', '**/.gitignore'
+-
+-        // spotless has built-in rules for most basic formatting tasks
+-        trimTrailingWhitespace()
+-        // or spaces. Takes an integer argument if you don't like 4
+-        indentWithSpaces(4)
+-        //paddedCell()
+-    }
+-}
+ 
+ 
+ jar {

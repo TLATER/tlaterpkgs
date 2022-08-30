@@ -26,6 +26,14 @@ fetch.pypi = "qtsass"
 src.github = "richardwilkes/gcs"
 fetch.github = "richardwilkes/gcs"
 
+[maptool]
+src.github = "RPTools/maptool"
+fetch.github = "RPTools/maptool"
+
+[maptool-dicelib]
+src.manual = "1.8.3"
+fetch.github = "RPTools/dicelib"
+
 [pokefinder]
 src.git = "https://github.com/Admiral-Fish/PokeFinder"
 # The released version currently fails to build because a submodule

@@ -39,6 +39,28 @@
       sha256 = "sha256-znN2tBUp0yAvM6E4eTcfmV3KmzyYlrRMLZgc/Fg9tFc=";
     });
   };
+  maptool = {
+    pname = "maptool";
+    version = "1.11.5";
+    src = fetchFromGitHub ({
+      owner = "RPTools";
+      repo = "maptool";
+      rev = "1.11.5";
+      fetchSubmodules = false;
+      sha256 = "sha256-8X9rPEsfU6f+jMWGfcgkMVW0/b+2+NlPWManhO7KQpk=";
+    });
+  };
+  maptool-dicelib = {
+    pname = "maptool-dicelib";
+    version = "1.8.3";
+    src = fetchFromGitHub ({
+      owner = "RPTools";
+      repo = "dicelib";
+      rev = "1.8.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-2yjKYHsSwBfkCe8UobWzBV7hDeU9OmsC1yrhVLR97mI=";
+    });
+  };
   pokefinder = {
     pname = "pokefinder";
     version = "8cc4f370621e18499e958b3dba1a4aa2a3ab80ec";

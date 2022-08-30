@@ -1,0 +1,72 @@
+diff --git a/build.gradle b/build.gradle
+index 3af75b35b..8a0292ee7 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -15,8 +15,6 @@ buildscript {
+ // Access Git info from build script
+ plugins {
+     id "application"
+-    id "org.ajoberstar.grgit" version "4.1.0"
+-    id "com.diffplug.spotless" version "5.14.3"
+     id 'org.openjfx.javafxplugin' version '0.0.10'
+     id 'org.beryx.runtime' version '1.12.5'
+     id "com.google.protobuf" version "0.8.17"
+@@ -27,7 +25,6 @@ apply plugin: 'base'
+ apply plugin: 'application'
+ apply plugin: 'java'
+ apply plugin: 'eclipse'
+-apply plugin: 'com.diffplug.spotless'
+ apply plugin: 'com.google.protobuf'
+ 
+ // Definitions
+@@ -98,36 +95,6 @@ ext {
+     println "OS Detected: " + osdetector.os
+ }
+ 
+-spotless {
+-    java {
+-        target project.fileTree(project.rootDir) {
+-            include 'src/**/*.java'
+-            exclude '**/JTextAreaAppender.java'
+-            exclude '**/TransferableHelper.java' // Temporary until switch expression is supported.
+-            exclude '**/MapToolInfo.java' // Temporary until supported.
+-            exclude '**/PlayerDatabaseInfo.java' // Temporary until supported.
+-            exclude '**/PlayerInfo.java' // Temporary until supported.
+-            exclude '**/PlayTimeInfo.java' // Temporary until supported.
+-            exclude '**/NoData.java' // Temporary until supported.
+-            exclude '**/PlayTime.java' // Temporary until supported.
+-            exclude '**/CipherUtil.java' // Temporary until supported.
+-        }
+-        licenseHeaderFile 'spotless.license.java'
+-
+-
+-        // Now using the Google Java style guide
+-        googleJavaFormat()
+-    }
+-
+-    format 'misc', {
+-        target '**/*.gradle', '**/.gitignore'
+-
+-        // spotless has built-in rules for most basic formatting tasks
+-        trimTrailingWhitespace()
+-        // or spaces. Takes an integer argument if you don't like 4
+-        indentWithSpaces(4)
+-    }
+-}
+ 
+ 
+ // org.openjfx.javafxplugin
+diff --git a/settings.gradle b/settings.gradle
+index a7198a167..85a17b09d 100644
+--- a/settings.gradle
++++ b/settings.gradle
+@@ -18,8 +18,3 @@ include 'services:webservice'
+ rootProject.name = 'MapTool'
+ 
+ 
+-sourceControl {
+-    gitRepository(uri("https://github.com/RPTools/dicelib.git")) {
+-        producesModule("net.rptools.dicelib:dicelib")
+-    }
+-}
+\ No newline at end of file

@@ -32,6 +32,11 @@
         type = "app";
         program = "${packages.edopro}/bin/edopro";
       };
+
+      "maptool" = {
+        type = "app";
+        program = "${packages.maptool}/bin/maptool";
+      };
     };
 
     devShells.${system}.default = pkgs.mkShell {buildInputs = with pkgs; [nvfetcher];};
