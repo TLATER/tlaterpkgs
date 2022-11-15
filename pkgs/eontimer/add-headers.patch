@@ -1,0 +1,19 @@
+diff --git a/src/services/TimerService.cpp b/src/services/TimerService.cpp
+index 269e498..7a4d9e7 100644
+--- a/src/services/TimerService.cpp
++++ b/src/services/TimerService.cpp
+@@ -10,6 +10,7 @@
+ #include <QThreadPool>
+ #include <stack>
+ #include <utility>
++#include <thread>
+ 
+ #include "SoundService.h"
+ 
+@@ -124,4 +125,4 @@ namespace service {
+     }
+ 
+     bool TimerService::isRunning() const { return running; }
+-}  // namespace service
+\ No newline at end of file
++}  // namespace service

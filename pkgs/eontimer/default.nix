@@ -20,12 +20,17 @@ in
     buildInputs = [qtbase sfml qtsass-pkg];
     nativeBuildInputs = [cmake qtsvg qttools wrapQtAppsHook];
 
+    patches = [
+      ./add-headers.patch
+    ];
+
     preBuild = ''
       python3 -m qtsass -o ../resources/styles ../resources/styles
     '';
 
     installPhase = ''
-      mkdir -p $out/bin
+      mkdir -p $out/{bin,share/doc/EonTimer}
+      cp ../LICENSE.md $out/share/doc/EonTimer/LICENSE
       cp EonTimer $out/bin
     '';
   }
