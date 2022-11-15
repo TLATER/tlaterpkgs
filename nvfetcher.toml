@@ -11,12 +11,12 @@ src.regex = 'https://github\.com/ProjectIgnis/edopro-assets/releases/download/(?
 fetch.url = "https://github.com/ProjectIgnis/edopro-assets/releases/download/$ver/ProjectIgnis-EDOPro-$ver-linux.tar.gz"
 
 [eontimer]
-src.git = "https://github.com/dylmeadows/EonTimer"
+src.git = "https://github.com/DasAmpharos/EonTimer"
 # For some reason the latest release is a java-based reimplementation,
 # but a newer version exists that hasn't been published as a real
 # release on github
 src.branch = "master"
-fetch.github = "dylmeadows/EonTimer"
+fetch.github = "DasAmpharos/EonTimer"
 
 [eontimer-qtsass]
 src.pypi = "qtsass"
@@ -35,9 +35,6 @@ src.manual = "1.8.3"
 fetch.github = "RPTools/dicelib"
 
 [pokefinder]
-src.git = "https://github.com/Admiral-Fish/PokeFinder"
-# The released version currently fails to build because a submodule
-# repo has stopped existing
-src.branch = "master"
+src.github = "Admiral-Fish/PokeFinder"
 fetch.github = "Admiral-Fish/PokeFinder"
 git.fetchSubmodules = true

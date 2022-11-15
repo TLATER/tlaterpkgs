@@ -3,17 +3,17 @@
 {
   edopro = {
     pname = "edopro";
-    version = "39.3.1";
+    version = "40.0.2";
     src = fetchurl {
-      url = "https://github.com/ProjectIgnis/edopro-assets/releases/download/39.3.1/ProjectIgnis-EDOPro-39.3.1-linux.tar.gz";
-      sha256 = "sha256-c7E7k6mKfXltiknR1JAsC78/q4+ypjJ19B2PBJX2nE4=";
+      url = "https://github.com/ProjectIgnis/edopro-assets/releases/download/40.0.2/ProjectIgnis-EDOPro-40.0.2-linux.tar.gz";
+      sha256 = "sha256-3GQNZFdVU3/G1WgyCUqryStqgVlWT6Qq3h4zuswUZ6U=";
     };
   };
   eontimer = {
     pname = "eontimer";
     version = "d53e42a508de4003b719791ce36e37a8f49dbfc9";
     src = fetchFromGitHub ({
-      owner = "dylmeadows";
+      owner = "DasAmpharos";
       repo = "EonTimer";
       rev = "d53e42a508de4003b719791ce36e37a8f49dbfc9";
       fetchSubmodules = false;
@@ -22,32 +22,32 @@
   };
   eontimer-qtsass = {
     pname = "eontimer-qtsass";
-    version = "0.3.0";
+    version = "0.3.2";
     src = fetchurl {
-      url = "https://pypi.io/packages/source/q/qtsass/qtsass-0.3.0.tar.gz";
-      sha256 = "sha256-J8SfY86p4joLlhj3H0pOmSgzzRz9947YMsac7qHeH+c=";
+      url = "https://pypi.io/packages/source/q/qtsass/qtsass-0.3.2.tar.gz";
+      sha256 = "sha256-twrR1KKDOdtDVALzaZWTR0TmXGn6TV1xZziFSrvx07Y=";
     };
   };
   gcs = {
     pname = "gcs";
-    version = "v4.37.1";
+    version = "v5.3.1";
     src = fetchFromGitHub ({
       owner = "richardwilkes";
       repo = "gcs";
-      rev = "v4.37.1";
+      rev = "v5.3.1";
       fetchSubmodules = false;
-      sha256 = "sha256-znN2tBUp0yAvM6E4eTcfmV3KmzyYlrRMLZgc/Fg9tFc=";
+      sha256 = "sha256-Xn9+F0Sst/XB7o2bZ9205SWH3C3DEw+Y2orBkiYyxPI=";
     });
   };
   maptool = {
     pname = "maptool";
-    version = "1.11.5";
+    version = "1.12.2";
     src = fetchFromGitHub ({
       owner = "RPTools";
       repo = "maptool";
-      rev = "1.11.5";
+      rev = "1.12.2";
       fetchSubmodules = false;
-      sha256 = "sha256-8X9rPEsfU6f+jMWGfcgkMVW0/b+2+NlPWManhO7KQpk=";
+      sha256 = "sha256-PhPjb0Ez9bdxQxinKOX87Ju11PjVPgIVQ8JyaRGV2Gk=";
     });
   };
   maptool-dicelib = {
@@ -63,13 +63,13 @@
   };
   pokefinder = {
     pname = "pokefinder";
-    version = "8cc4f370621e18499e958b3dba1a4aa2a3ab80ec";
+    version = "v4.0.1";
     src = fetchFromGitHub ({
       owner = "Admiral-Fish";
       repo = "PokeFinder";
-      rev = "8cc4f370621e18499e958b3dba1a4aa2a3ab80ec";
+      rev = "v4.0.1";
       fetchSubmodules = true;
-      sha256 = "sha256-XojkmEnHeilhRZ6OQ46Qd0yJLHnAAQyvdS4zAlZ2xTw=";
+      sha256 = "sha256-j7xgjNF8NWLFVPNItWcFM5WL8yPxgHxVX00x7lt45WI=";
     });
   };
 }

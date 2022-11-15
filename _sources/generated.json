@@ -7,11 +7,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-c7E7k6mKfXltiknR1JAsC78/q4+ypjJ19B2PBJX2nE4=",
+            "sha256": "sha256-3GQNZFdVU3/G1WgyCUqryStqgVlWT6Qq3h4zuswUZ6U=",
             "type": "url",
-            "url": "https://github.com/ProjectIgnis/edopro-assets/releases/download/39.3.1/ProjectIgnis-EDOPro-39.3.1-linux.tar.gz"
+            "url": "https://github.com/ProjectIgnis/edopro-assets/releases/download/40.0.2/ProjectIgnis-EDOPro-40.0.2-linux.tar.gz"
         },
-        "version": "39.3.1"
+        "version": "40.0.2"
     },
     "eontimer": {
         "cargoLocks": null,
@@ -24,7 +24,7 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "dylmeadows",
+            "owner": "DasAmpharos",
             "repo": "EonTimer",
             "rev": "d53e42a508de4003b719791ce36e37a8f49dbfc9",
             "sha256": "sha256-jelFKEaifMOtKWJIkJvDMoP+dsQOfNPkx9YjyK4HVj4=",
@@ -40,11 +40,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-J8SfY86p4joLlhj3H0pOmSgzzRz9947YMsac7qHeH+c=",
+            "sha256": "sha256-twrR1KKDOdtDVALzaZWTR0TmXGn6TV1xZziFSrvx07Y=",
             "type": "url",
-            "url": "https://pypi.io/packages/source/q/qtsass/qtsass-0.3.0.tar.gz"
+            "url": "https://pypi.io/packages/source/q/qtsass/qtsass-0.3.2.tar.gz"
         },
-        "version": "0.3.0"
+        "version": "0.3.2"
     },
     "gcs": {
         "cargoLocks": null,
@@ -59,11 +59,11 @@
             "name": null,
             "owner": "richardwilkes",
             "repo": "gcs",
-            "rev": "v4.37.1",
-            "sha256": "sha256-znN2tBUp0yAvM6E4eTcfmV3KmzyYlrRMLZgc/Fg9tFc=",
+            "rev": "v5.3.1",
+            "sha256": "sha256-Xn9+F0Sst/XB7o2bZ9205SWH3C3DEw+Y2orBkiYyxPI=",
             "type": "github"
         },
-        "version": "v4.37.1"
+        "version": "v5.3.1"
     },
     "maptool": {
         "cargoLocks": null,
@@ -78,11 +78,11 @@
             "name": null,
             "owner": "RPTools",
             "repo": "maptool",
-            "rev": "1.11.5",
-            "sha256": "sha256-8X9rPEsfU6f+jMWGfcgkMVW0/b+2+NlPWManhO7KQpk=",
+            "rev": "1.12.2",
+            "sha256": "sha256-PhPjb0Ez9bdxQxinKOX87Ju11PjVPgIVQ8JyaRGV2Gk=",
             "type": "github"
         },
-        "version": "1.11.5"
+        "version": "1.12.2"
     },
     "maptool-dicelib": {
         "cargoLocks": null,
@@ -116,10 +116,10 @@
             "name": null,
             "owner": "Admiral-Fish",
             "repo": "PokeFinder",
-            "rev": "8cc4f370621e18499e958b3dba1a4aa2a3ab80ec",
-            "sha256": "sha256-XojkmEnHeilhRZ6OQ46Qd0yJLHnAAQyvdS4zAlZ2xTw=",
+            "rev": "v4.0.1",
+            "sha256": "sha256-j7xgjNF8NWLFVPNItWcFM5WL8yPxgHxVX00x7lt45WI=",
             "type": "github"
         },
-        "version": "8cc4f370621e18499e958b3dba1a4aa2a3ab80ec"
+        "version": "v4.0.1"
     }
 }
