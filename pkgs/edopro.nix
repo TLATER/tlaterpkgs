@@ -1,6 +1,10 @@
-{ sources, stdenv, buildFHSUserEnvBubblewrap, writeShellScript, edopro-raw }:
-
-let
+{
+  sources,
+  stdenv,
+  buildFHSUserEnvBubblewrap,
+  writeShellScript,
+  edopro-raw,
+}: let
   runScript = writeShellScript "edopro" ''
     set -eu
 
@@ -33,19 +37,20 @@ let
     cd "$EDOPRO_DATADIR"
     "$EDOPRO_DATADIR/EDOPro"
   '';
-in buildFHSUserEnvBubblewrap {
-  inherit runScript;
+in
+  buildFHSUserEnvBubblewrap {
+    inherit runScript;
 
-  name = "edopro";
-  targetPkgs = pkgs:
-    with pkgs; [
-      alsa-lib
-      libGL
-      mono
-      udev
-      xorg.libX11
-      xorg.libXcursor
-      xorg.libXrandr
-      xorg.libXxf86vm
-    ];
-}
+    name = "edopro";
+    targetPkgs = pkgs:
+      with pkgs; [
+        alsa-lib
+        libGL
+        mono
+        udev
+        xorg.libX11
+        xorg.libXcursor
+        xorg.libXrandr
+        xorg.libXxf86vm
+      ];
+  }
