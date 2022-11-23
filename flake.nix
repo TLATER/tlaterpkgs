@@ -35,7 +35,7 @@
 
       "maptool" = {
         type = "app";
-        program = "${packages.maptool}/bin/maptool";
+        program = "${packages.maptool}/bin/MapTool";
       };
     };
 
