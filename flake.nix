@@ -37,6 +37,16 @@
         type = "app";
         program = "${packages.maptool}/bin/MapTool";
       };
+
+      "servefiles" = {
+        type = "app";
+        program = "${packages.servefiles}/bin/servefiles";
+      };
+
+      "sendurls" = {
+        type = "app";
+        program = "${packages.servefiles}/bin/sendurls";
+      };
     };
 
     devShells.${system}.default = pkgs.mkShell {buildInputs = with pkgs; [nvfetcher];};

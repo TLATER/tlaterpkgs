@@ -22,6 +22,10 @@ fetch.github = "DasAmpharos/EonTimer"
 src.pypi = "qtsass"
 fetch.pypi = "qtsass"
 
+[fbi]
+src.github = "Steveice10/FBI"
+fetch.github = "Steveice10/FBI"
+
 [gcs]
 src.github = "richardwilkes/gcs"
 fetch.github = "richardwilkes/gcs"

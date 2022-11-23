@@ -9,4 +9,5 @@ in rec {
   edopro-raw = callPackage ./edopro-raw.nix {};
   edopro = callPackage ./edopro.nix {inherit edopro-raw;};
   maptool = callPackage ./maptool.nix {inherit dicelib;};
+  servefiles = callPackage ./servefiles.nix {};
 }

@@ -28,15 +28,26 @@
       sha256 = "sha256-twrR1KKDOdtDVALzaZWTR0TmXGn6TV1xZziFSrvx07Y=";
     };
   };
+  fbi = {
+    pname = "fbi";
+    version = "2.6.1";
+    src = fetchFromGitHub ({
+      owner = "Steveice10";
+      repo = "FBI";
+      rev = "2.6.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-KUXAgiCF++JfpwpA3A0/2IGXdyRL2mUMJo4v4kMAJPE=";
+    });
+  };
   gcs = {
     pname = "gcs";
-    version = "v5.3.1";
+    version = "v5.4.0";
     src = fetchFromGitHub ({
       owner = "richardwilkes";
       repo = "gcs";
-      rev = "v5.3.1";
+      rev = "v5.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-Xn9+F0Sst/XB7o2bZ9205SWH3C3DEw+Y2orBkiYyxPI=";
+      sha256 = "sha256-6jd0+V44n9ZGSVlSNX5SU+9vGH8m3abUOP6QLsvQ2eg=";
     });
   };
   maptool = {
