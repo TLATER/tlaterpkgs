@@ -27,11 +27,11 @@ src.github = "Steveice10/FBI"
 fetch.github = "Steveice10/FBI"
 
 [gcs]
-src.github = "richardwilkes/gcs"
+src.manual = "v4.37.1"
 fetch.github = "richardwilkes/gcs"
 
 [maptool]
-src.github = "RPTools/maptool"
+src.manual = "1.11.5"
 fetch.github = "RPTools/maptool"
 
 [maptool-dicelib]

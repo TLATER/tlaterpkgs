@@ -78,11 +78,11 @@
             "name": null,
             "owner": "richardwilkes",
             "repo": "gcs",
-            "rev": "v5.4.0",
-            "sha256": "sha256-6jd0+V44n9ZGSVlSNX5SU+9vGH8m3abUOP6QLsvQ2eg=",
+            "rev": "v4.37.1",
+            "sha256": "sha256-znN2tBUp0yAvM6E4eTcfmV3KmzyYlrRMLZgc/Fg9tFc=",
             "type": "github"
         },
-        "version": "v5.4.0"
+        "version": "v4.37.1"
     },
     "maptool": {
         "cargoLocks": null,
@@ -97,11 +97,11 @@
             "name": null,
             "owner": "RPTools",
             "repo": "maptool",
-            "rev": "1.12.2",
-            "sha256": "sha256-PhPjb0Ez9bdxQxinKOX87Ju11PjVPgIVQ8JyaRGV2Gk=",
+            "rev": "1.11.5",
+            "sha256": "sha256-8X9rPEsfU6f+jMWGfcgkMVW0/b+2+NlPWManhO7KQpk=",
             "type": "github"
         },
-        "version": "1.12.2"
+        "version": "1.11.5"
     },
     "maptool-dicelib": {
         "cargoLocks": null,

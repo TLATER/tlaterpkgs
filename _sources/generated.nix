@@ -41,24 +41,24 @@
   };
   gcs = {
     pname = "gcs";
-    version = "v5.4.0";
+    version = "v4.37.1";
     src = fetchFromGitHub ({
       owner = "richardwilkes";
       repo = "gcs";
-      rev = "v5.4.0";
+      rev = "v4.37.1";
       fetchSubmodules = false;
-      sha256 = "sha256-6jd0+V44n9ZGSVlSNX5SU+9vGH8m3abUOP6QLsvQ2eg=";
+      sha256 = "sha256-znN2tBUp0yAvM6E4eTcfmV3KmzyYlrRMLZgc/Fg9tFc=";
     });
   };
   maptool = {
     pname = "maptool";
-    version = "1.12.2";
+    version = "1.11.5";
     src = fetchFromGitHub ({
       owner = "RPTools";
       repo = "maptool";
-      rev = "1.12.2";
+      rev = "1.11.5";
       fetchSubmodules = false;
-      sha256 = "sha256-PhPjb0Ez9bdxQxinKOX87Ju11PjVPgIVQ8JyaRGV2Gk=";
+      sha256 = "sha256-8X9rPEsfU6f+jMWGfcgkMVW0/b+2+NlPWManhO7KQpk=";
     });
   };
   maptool-dicelib = {
