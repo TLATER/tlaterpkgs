@@ -84,44 +84,6 @@
         },
         "version": "v4.37.1"
     },
-    "maptool": {
-        "cargoLocks": null,
-        "extract": null,
-        "name": "maptool",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "RPTools",
-            "repo": "maptool",
-            "rev": "1.11.5",
-            "sha256": "sha256-8X9rPEsfU6f+jMWGfcgkMVW0/b+2+NlPWManhO7KQpk=",
-            "type": "github"
-        },
-        "version": "1.11.5"
-    },
-    "maptool-dicelib": {
-        "cargoLocks": null,
-        "extract": null,
-        "name": "maptool-dicelib",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "RPTools",
-            "repo": "dicelib",
-            "rev": "1.8.3",
-            "sha256": "sha256-2yjKYHsSwBfkCe8UobWzBV7hDeU9OmsC1yrhVLR97mI=",
-            "type": "github"
-        },
-        "version": "1.8.3"
-    },
     "pokefinder": {
         "cargoLocks": null,
         "extract": null,

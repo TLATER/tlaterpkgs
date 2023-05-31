@@ -1,9 +1,14 @@
 {
   description = "A collection of somewhat specialized nix packages";
 
+  inputs = {
+    nixpkgs-maptool.url = "github:rhendric/nixpkgs/rhendric/maptool";
+  };
+
   outputs = {
     self,
     nixpkgs,
+    nixpkgs-maptool,
   }: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -35,7 +40,7 @@
 
       "maptool" = {
         type = "app";
-        program = "${packages.maptool}/bin/MapTool";
+        program = "${nixpkgs-maptool.legacyPackages.${system}.maptool}/bin/maptool";
       };
 
       "servefiles" = {
